@@ -234,6 +234,58 @@
   font-size: 18px;
 }
 
+.form{
+  margin-top: 50px;
+}
+
+lable {
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+}
+input[type="text"] {
+    height: 35px;
+    line-height: 35px;
+}
+input, textarea {
+    width: 40%;
+    background: #E5DBD0;
+    border: 1px solid #707070;
+    outline: 0;
+}
+input:focus,textarea:focus{
+  /* border: 0; */
+  /* outline: 0; */
+  border: 1px solid #707070;
+}
+
+textarea{
+  height: 200px;
+}
+
+.form-item.message lable {
+    position: relative;
+    top: -185px;
+    display: inline-block;
+}
+
+.form-item {
+    margin-bottom: 20px;
+}
+.btn{
+  margin-left: 150px;
+}
+.btn button{
+  background: #E39F33;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+
+
+
 
 @media (max-width: 768px){
 
@@ -244,24 +296,55 @@ body{
   padding-bottom: 30px;
 }
 
+lable {
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  background: #E5DBD0;
+  border: 1px solid #707070;
+  outline: 0;
+}
 .top,.user{
   width: 100%;
   top: 2%;
 }
 .look{
-  padding-left: 0!important;
-}
-.info-img img{
-  width: 100%;
-  width: 100%;
-    height: 100%;
-    padding: 0;
+  padding-left:0!important;
+  /* display: none; */
 }
 .container-fluid,.container{
   padding: 0;
   overflow-x: hidden;
 }
 
+.btn button {
+    background: #E39F33;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 0;
+    width: 100%;
+}
+.form-item{
+  width: 100%;
+}
+
+.form-item.message lable {
+    position: relative;
+    top: 0;
+    display: inline-block;
+}
+.btn{
+  margin-left: 0;
+}
+.form {
+    margin-top: 50px;
+    padding: 10px 30px;
+}
 .block1, .block2, .block3{
   padding: 0;
   margin: 10px 0;
@@ -330,36 +413,52 @@ padding-bottom: 20px;
         <section class="content" style="padding-bottom: 100px;">
 
           <div class="fix-title">
-            Gallery
+            Contact me
 
           </div>
 
 
           <div class="row">
-            <div class="col-md-12 text-center info-img">
-              <img src="./1.png" alt="" width="953" height="681">
-              <span>Illustration</span>
-            </div>
-          </div>
 
+            <div class="col-md-12 text-center form">
 
-          <div class="row">
-            <div class="col-md-12 text-center info-img">
-              <img src="./2.png" alt="" width="948" height="583">
-              <span>Brand stationery design</span>
-            </div>
-          </div>
+              <form action="#">
 
 
 
-          <div class="row">
-            <div class="col-md-12 text-center info-img">
-              <img src="./3.png" alt="" width="665" height="862">
-              <span>Poster</span>
-            </div>
+                <div class="form-item">
+                  <lable>Name:</lable>
+                  <input type="text">
+                </div>
+
+                <div class="form-item">
+                  <lable>Email:</lable>
+                  <input type="text">
+                </div>
+
+                <div class="form-item">
+                  <lable>Subject:</lable>
+                  <input type="text">
+                </div>
+
+
+                <div class="form-item message">
+                  <lable>Message:</lable>
+                  <textarea name="content" id="" cols="30" rows="10"></textarea>
+                </div>
+
+
+                <div class="form-item btn">
+
+                  <button type="submit">Send email</button>
+                
+                </div>
+
+              </form>
+              </div>
+             
           </div>
           
-
         </section>
 
 

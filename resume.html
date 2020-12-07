@@ -180,48 +180,74 @@
 
 
 
+
+.nav{
+  margin-left: 33.33333333%;
+  position: relative;
+    bottom: -50px;
+  
+}
+.nav ul{display: flex;}
+.nav ul li{
+  flex: 1;
+  text-align: center;
+}
+
+.nav ul li a{
+  color: #000;
+}
+
 /* 手机 */
 
 @media (max-width: 768px){
 
   
-  body{
-    /* background: #000; */
-    /* width: 100%; */
-    padding-bottom: 30px;
-  }
-
-  .top,.user{
-    width: 100%;
-    top: 2%;
-  }
-  .look{
-    display: none;
-  }
-  .container-fluid,.container{
-    padding: 0;
-  }
-
-  .block1, .block2, .block3{
-    padding: 0;
-    margin: 10px 0;
-  }
-  .block2 .language {
-    padding-bottom: 20px;
+body{
+  /* background: #000; */
+  /* width: 100%; */
+  padding-bottom: 30px;
 }
-.block3 .b3 {
-  padding-bottom: 10px;
+
+
+.nav {
+  margin-left: 33.33333333%;
+  position: relative;
+  bottom: -200px;
+  z-index: 99999;
+  background: #ffffff73;
+  height: 35px;
+  line-height: 35px;
 }
-.color2{
+
+.top,.user{
+  width: 100%;
+  top: 2%;
+}
+.look{
+  display: none;
+}
+.container-fluid,.container{
+  padding: 0;
+}
+
+.block1, .block2, .block3{
+  padding: 0;
+  margin: 10px 0;
+}
+.block2 .language {
   padding-bottom: 20px;
 }
-.content-block1, .content-block2 {
-    padding-left: 0px;
+.block3 .b3 {
+padding-bottom: 10px;
 }
-		
-	}
-
-
+.color2{
+padding-bottom: 20px;
+}
+.content-block1, .content-block2 {
+  padding-left: 0px;
+}
+  
+}
     </style>
 
 
@@ -252,6 +278,19 @@
               <text id="Graphic_Designer" data-name="Graphic Designer" transform="translate(104 45)" fill="#116d89" font-size="40" font-family="Baskerville-SemiBoldItalic, Baskerville" font-weight="600" font-style="italic"><tspan x="0" y="36">Graphic Designer</tspan></text>
             </svg>
           </div>
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="index.html">Gallery</a>
+              </li>
+              <li>
+                <a href="resume.html">Resume</a>
+              </li>
+              <li>
+                <a href="about.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
         <div class="user">
